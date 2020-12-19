@@ -20,10 +20,10 @@ render() {
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-            <MDBNavItem>
+            <MDBNavItem className="navlink">
               <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            <MDBNavItem className="navlink">
               <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
@@ -35,7 +35,7 @@ render() {
                     onClick={() => {
                         window.open("https://github.com/vivid-green");
                     }}
-                ><MDBIcon fab icon="instagram" size="2x"/></MDBBtn>
+                ><MDBIcon fab icon="github" size="3x"/></MDBBtn>
                 <MDBBtn 
                     className="waves-effect waves-light black-text" 
                     gradient="juicy-peach"
@@ -43,7 +43,7 @@ render() {
                     onClick={() => {
                         window.open("https://www.linkedin.com/in/zacharycreek/");
                     }}
-                ><MDBIcon fab icon="linkedin" size="2x"/></MDBBtn>
+                ><MDBIcon fab icon="linkedin" size="3x"/></MDBBtn>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

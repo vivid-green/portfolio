@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIcon } from 'mdbreact';
 
 const Card = (props) => {
   return (
@@ -11,8 +11,8 @@ const Card = (props) => {
           <MDBCardText className="cardbody">
             {props.desc}
           </MDBCardText>
-          <MDBBtn href={props.github} target="_blank" rel="noreferrer">Github</MDBBtn>
-          <MDBBtn href={props.website} target="_blank" rel="noreferrer">Website</MDBBtn>
+          <MDBBtn gradient="juicy-peach" style={{color: "black"}} href={props.github} target="_blank" rel="noreferrer"><MDBIcon fab icon="github" size="3x"/> Github</MDBBtn>
+          <MDBBtn gradient="juicy-peach" style={{color: "black"}} href={props.website} target="_blank" rel="noreferrer"><MDBIcon  icon="globe-americas" size="3x"/> Website</MDBBtn>
         </MDBCardBody>
       </MDBCard>
     </MDBCol>

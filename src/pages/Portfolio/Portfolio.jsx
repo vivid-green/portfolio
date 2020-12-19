@@ -6,10 +6,20 @@ import quotesQuiz from "../../images/quote-quiz.png";
 import noteTaker from "../../images/note-taker.png"
 import furLodge from "../../images/furlodge.png";
 import secretFormula from "../../images/secret-formula.png";
+import employeeDirectory from "../../images/employee-directory.png";
 
 const Portfolio = () => {
 return (
 <MDBContainer>
+    <MDBRow>
+        <Card
+            img={employeeDirectory}
+            title="Employee Directory"
+            desc="My first dip into React was a blast. I found a lot of great frameworks and libraries out there for react. I used mdbreact for the data table and other components."
+            github="https://github.com/vivid-green/employee-directory"
+            website="https://vivid-green.github.io/employee-directory/"
+        />
+    </MDBRow>
     <MDBRow>
         <Card
             img={forecast}
